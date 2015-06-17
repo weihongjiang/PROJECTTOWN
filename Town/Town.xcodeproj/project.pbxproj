@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5264AB131B257C9E00E55EE1 /* JASidePanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5264AB101B257C9E00E55EE1 /* JASidePanelController.m */; };
+		5264AB1C1B257F9100E55EE1 /* JALeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5264AB1B1B257F9100E55EE1 /* JALeftViewController.swift */; };
+		5264AB1E1B257FAC00E55EE1 /* JARightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5264AB1D1B257FAC00E55EE1 /* JARightViewController.swift */; };
+		5264AB201B257FC000E55EE1 /* JACenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5264AB1F1B257FC000E55EE1 /* JACenterViewController.swift */; };
+		526E3C461B31575000169782 /* JACenterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526E3C451B31575000169782 /* JACenterTableViewCell.swift */; };
 		52D141721B20368800D042B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D141711B20368800D042B4 /* AppDelegate.swift */; };
 		52D141741B20368800D042B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D141731B20368800D042B4 /* ViewController.swift */; };
 		52D141771B20368800D042B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52D141751B20368800D042B4 /* Main.storyboard */; };
@@ -26,6 +31,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5264AB0A1B25762B00E55EE1 /* OCHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCHeader.h; sourceTree = "<group>"; };
+		5264AB0F1B257C9E00E55EE1 /* JASidePanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JASidePanelController.h; sourceTree = "<group>"; };
+		5264AB101B257C9E00E55EE1 /* JASidePanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JASidePanelController.m; sourceTree = "<group>"; };
+		5264AB1B1B257F9100E55EE1 /* JALeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JALeftViewController.swift; sourceTree = "<group>"; };
+		5264AB1D1B257FAC00E55EE1 /* JARightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JARightViewController.swift; sourceTree = "<group>"; };
+		5264AB1F1B257FC000E55EE1 /* JACenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JACenterViewController.swift; sourceTree = "<group>"; };
+		526E3C451B31575000169782 /* JACenterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JACenterTableViewCell.swift; sourceTree = "<group>"; };
 		52D1416C1B20368800D042B4 /* Town.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Town.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D141701B20368800D042B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52D141711B20368800D042B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +68,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5264AB0E1B257C9E00E55EE1 /* JASidePanels */ = {
+			isa = PBXGroup;
+			children = (
+				5264AB0F1B257C9E00E55EE1 /* JASidePanelController.h */,
+				5264AB101B257C9E00E55EE1 /* JASidePanelController.m */,
+			);
+			path = JASidePanels;
+			sourceTree = "<group>";
+		};
 		52D141631B20368800D042B4 = {
 			isa = PBXGroup;
 			children = (
@@ -77,8 +98,14 @@
 		52D1416E1B20368800D042B4 /* Town */ = {
 			isa = PBXGroup;
 			children = (
+				5264AB0E1B257C9E00E55EE1 /* JASidePanels */,
+				5264AB0A1B25762B00E55EE1 /* OCHeader.h */,
 				52D141711B20368800D042B4 /* AppDelegate.swift */,
 				52D141731B20368800D042B4 /* ViewController.swift */,
+				5264AB1B1B257F9100E55EE1 /* JALeftViewController.swift */,
+				5264AB1D1B257FAC00E55EE1 /* JARightViewController.swift */,
+				5264AB1F1B257FC000E55EE1 /* JACenterViewController.swift */,
+				526E3C451B31575000169782 /* JACenterTableViewCell.swift */,
 				52D141751B20368800D042B4 /* Main.storyboard */,
 				52D141781B20368800D042B4 /* Images.xcassets */,
 				52D1417A1B20368800D042B4 /* LaunchScreen.xib */,
@@ -213,7 +240,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				52D141741B20368800D042B4 /* ViewController.swift in Sources */,
+				5264AB201B257FC000E55EE1 /* JACenterViewController.swift in Sources */,
+				5264AB1C1B257F9100E55EE1 /* JALeftViewController.swift in Sources */,
 				52D141721B20368800D042B4 /* AppDelegate.swift in Sources */,
+				5264AB131B257C9E00E55EE1 /* JASidePanelController.m in Sources */,
+				526E3C461B31575000169782 /* JACenterTableViewCell.swift in Sources */,
+				5264AB1E1B257FAC00E55EE1 /* JARightViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +373,8 @@
 				INFOPLIST_FILE = Town/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Town/OCHeader.h;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -351,6 +385,8 @@
 				INFOPLIST_FILE = Town/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Town/OCHeader.h;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -407,6 +443,7 @@
 				52D1418D1B20368900D042B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		52D1418E1B20368900D042B4 /* Build configuration list for PBXNativeTarget "TownTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +452,7 @@
 				52D141901B20368900D042B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

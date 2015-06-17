@@ -12,10 +12,35 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    //var centerController:JACenterViewController!
+//    var leftController:JALeftViewController!
+//    var rightController:JARightViewController!
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        self.window!.backgroundColor = UIColor.whiteColor()
+        self.window!.makeKeyAndVisible()
+        
+        
+        var panelController  = JASidePanelController()
+        var centerController = JACenterViewController()
+        var navController = UINavigationController(rootViewController:centerController)
+        navController.navigationBar.tintColor = UIColor.whiteColor()
+        navController.navigationBar.barTintColor = UIColor(red: 0, green: 176/255.0, blue: 232/255, alpha: 1.0)
+        let titleAtrr: NSDictionary = NSDictionary(object: UIColor.whiteColor(), forKey: NSForegroundColorAttributeName)
+        navController.navigationBar.titleTextAttributes = titleAtrr as? Dictionary
+        
+        
+        
+        panelController.leftPanel = JALeftViewController()
+        panelController.rightPanel = JARightViewController()
+        panelController.centerPanel = navController
+        
+        var tabbarController = UITabBarController()
+        self.window!.rootViewController = panelController
+        
         return true
     }
 
